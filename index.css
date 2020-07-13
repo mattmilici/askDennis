@@ -17,6 +17,7 @@ body {
 span {
     color: yellow;
     font-weight: bold;
+    font-family: 'Righteous', cursive;
 }
 
 h1,
@@ -24,6 +25,7 @@ h3,
 h5,
 p {
     color: white;
+    font-family: 'Righteous', cursive;
 }
 
 main {
