@@ -33,17 +33,3 @@ main {
     margin-top: 0;
     margin-bottom: 0;
 }
-
-.img-button {
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-.question {
-    height: auto;
-    width: 50px;
-}
