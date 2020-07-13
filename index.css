@@ -3,7 +3,7 @@ nav {
 }
 
 .row-item {
-    margin-bottom: 3%;
+    margin-bottom: 2%;
 }
 
 .row-items {
@@ -20,7 +20,14 @@ span {
 }
 
 h1,
+h3,
 h5,
 p {
     color: white;
+}
+
+main {
+    margin-bottom: 15%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
