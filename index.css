@@ -31,5 +31,19 @@ p {
 main {
     margin-bottom: 15%;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 5%;
+}
+
+.footer {
+    position: relative;
+}
+
+.question-button {
+    border: none;
+    background-color: #27abe9;
+    height: auto;
+    width: 5%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
