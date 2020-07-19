@@ -25,15 +25,19 @@ function console() {
 }
 
 function whoBenefits() {
+    var value = document.getElementById("userInput").value;
+
     var elem = document.getElementById("userInput");
     elem.parentNode.removeChild(elem);
-    document.getElementById("questions").innerHTML = "Does this benefit others?";
+    document.getElementById("questions").innerHTML =
+        value + "?! Does this benefit others?";
 
     var noButton = document.createElement("button");
     var inputButton = document.createTextNode("No");
     noButton.appendChild(inputButton);
     noButton.setAttribute("id", "no-button");
     noButton.setAttribute("class", "btn btn-light");
+    noButton.setAttribute("onClick", "dennisResponse()");
     var buttonElement = document.getElementById("buttonAction");
     buttonElement.insertBefore(noButton, buttonElement.childNodes[2]);
 
@@ -44,6 +48,12 @@ function whoBenefits() {
 function dennisResponse() {
     var no_button = document.getElementById("no-button");
     no_button.parentNode.removeChild(no_button);
+
+    // var benefits = document.getElementById("questions");
+    // benefits.parentNode.removeChild(benefits);
+
+    var start = document.getElementById("startButton");
+    start.parentNode.removeChild(start);
 
     // changes responses
     let random = [
@@ -57,7 +67,7 @@ function dennisResponse() {
         "You know what... Yes, you deserve it!",
     ];
     let randomResponse = Math.floor(Math.random() * random.length);
-    document.getElementById("test").innerHTML = random[randomResponse];
+    document.getElementById("questions").innerHTML = random[randomResponse];
 
     // adds sound
     if (random[randomResponse] === random[random.length - 1]) {
@@ -67,6 +77,16 @@ function dennisResponse() {
         var audio = new Audio("./sounds/fart1.wav");
         audio.play();
     }
+
+    // var restart = document.createElement("button");
+    // var restartNode = document.createTextNode("Restart");
+    // restart.appendChild(restartNode);
+    // restart.setAttribute("class", "btn btn-light");
+    // restart.setAttribute("id", "restart");
+    // var ResartButton = document.getElementById("buttonAction");
+    // ResartButton.insertBefore(restart, ResartButton.childNodes[1]);
+
+    // document.getElementById("restart").setAttribute("onClick", "console()");
 }
 
 // ---------------- nightmode --------------
