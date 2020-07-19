@@ -59,3 +59,11 @@ main {
 .dark .night-mode-btn {
     color: yellow;
 }
+
+#no-button {
+    margin-right: 5%;
+}
+
+#questions {
+    margin-bottom: 2%;
+}
