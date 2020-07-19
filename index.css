@@ -14,14 +14,6 @@ nav {
     background-color: #27abe9;
 }
 
-.light .body-div {
-    background-color: #27abe9;
-}
-
-.dark .body-div {
-    background-color: black;
-}
-
 .light span {
     color: yellow;
     font-weight: bold;
@@ -29,7 +21,7 @@ nav {
 }
 
 .dark span {
-    color: #27abe9;
+    color: #204051;
     font-weight: bold;
     font-family: "Righteous", cursive;
 }
@@ -61,11 +53,9 @@ main {
 }
 
 .light .night-mode-btn {
-    background-color: #27abe9;
     color: black;
 }
 
 .dark .night-mode-btn {
-    background-color: black;
     color: yellow;
 }
