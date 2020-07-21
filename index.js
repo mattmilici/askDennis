@@ -1,4 +1,4 @@
-var startButton = document.querySelector("#startButton");
+// var startButton = document.querySelector("#startButton");
 
 function console() {
     var para = document.createElement("p");
@@ -78,15 +78,34 @@ function dennisResponse() {
         audio.play();
     }
 
-    // var restart = document.createElement("button");
-    // var restartNode = document.createTextNode("Restart");
-    // restart.appendChild(restartNode);
-    // restart.setAttribute("class", "btn btn-light");
-    // restart.setAttribute("id", "restart");
-    // var ResartButton = document.getElementById("buttonAction");
-    // ResartButton.insertBefore(restart, ResartButton.childNodes[1]);
+    var restart = document.createElement("button");
+    var restartNode = document.createTextNode("Restart");
+    restart.appendChild(restartNode);
+    restart.setAttribute("class", "btn btn-light");
+    restart.setAttribute("id", "restart");
+    var ResartButton = document.getElementById("buttonAction");
+    ResartButton.insertBefore(restart, ResartButton.childNodes[1]);
 
-    // document.getElementById("restart").setAttribute("onClick", "console()");
+    document.getElementById("restart").setAttribute("onClick", "test()");
+}
+
+function test() {
+    var dennisAnswer = document.getElementById("questions");
+    dennisAnswer.remove();
+
+    var restartButton = document.getElementById("restart");
+    restartButton.remove();
+
+    var askDennis = document.createElement("button");
+    var askAgain = document.createTextNode("Ask again!");
+    askDennis.appendChild(askAgain);
+    askDennis.setAttribute("id", "startButton");
+    askDennis.setAttribute("class", "btn btn-light");
+    askDennis.setAttribute("onClick", "console()");
+
+    var askDennisButton = document.getElementById("buttonAction");
+    askDennisButton.insertBefore(askDennis, askDennisButton.childNodes[1]);
+    document.getElementById("startButton").setAttribute("onClick", "console()");
 }
 
 // ---------------- nightmode --------------
