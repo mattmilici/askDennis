@@ -11,6 +11,8 @@ nav {
 }
 
 .body-div {
+    position: relative;
+    bottom: 0;
     background-color: #27abe9;
     margin: 0;
     padding: 0;
