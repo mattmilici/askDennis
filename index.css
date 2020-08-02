@@ -14,6 +14,11 @@ nav {
     background-color: #27abe9;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .light span {
     color: yellow;
     font-weight: bold;
