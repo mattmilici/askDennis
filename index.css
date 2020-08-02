@@ -20,12 +20,6 @@ nav {
     font-family: "Righteous", cursive;
 }
 
-.dark span {
-    color: #204051;
-    font-weight: bold;
-    font-family: "Righteous", cursive;
-}
-
 h1,
 h3,
 h5,
@@ -52,12 +46,8 @@ main {
     color: black;
 }
 
-.light .night-mode-btn {
+.night-mode-btn {
     color: black;
-}
-
-.dark .night-mode-btn {
-    color: yellow;
 }
 
 #no-button {
@@ -75,10 +65,6 @@ main {
     margin: auto;
 }
 
-.purpose-box p {}
-
-.purpose-text {}
-
 .purpose-header {
     text-align: center;
     margin-bottom: 3%;
@@ -91,4 +77,8 @@ main {
 .purpose-container {
     position: relative;
     padding-bottom: 10%;
+}
+
+#userInput {
+    color: #27abe9;
 }
