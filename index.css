@@ -11,17 +11,15 @@ nav {
 }
 
 .body-div {
-    position: relative;
-    bottom: 0;
     background-color: #27abe9;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+}
+
+body {
+    background-color: #27abe9;
+    margin: 0;
+    padding: 0;
 }
 
 .light span {
