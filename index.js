@@ -35,8 +35,13 @@ function nextButton() {
     $("#userInput").hide();
     let userResponse = $("#userInput").val();
     var userKey = "question" + number;
+    var userDate = "date" + number;
+    let date = moment().format("dddd, Do MMMM");
+
     localStorage.setItem(userKey, JSON.stringify(userResponse));
     localStorage.setItem("questionNumber", JSON.stringify(number));
+    localStorage.setItem(userDate, JSON.stringify(date));
+
     $("#questionPrompt").text(
         userResponse + "?! wait hold up. Does this benefit others?"
     );
