@@ -136,3 +136,7 @@ main {
     font-size: 1.5rem;
     font-weight: bolder;
 }
+
+.navbar-dark {
+    border: none;
+}
