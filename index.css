@@ -140,3 +140,8 @@ main {
 .navbar-dark {
     border: none;
 }
+
+.fa-arrow-circle-right {
+    color: white;
+    background-color: none;
+}
