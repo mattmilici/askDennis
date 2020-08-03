@@ -116,3 +116,23 @@ main {
     text-align: center;
     color: yellow;
 }
+
+.nav-link {
+    color: white;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bolder;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: yellow;
+    font-weight: bold;
+}
+
+#questionPrompt {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
