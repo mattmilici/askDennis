@@ -38,15 +38,23 @@ function nextButton() {
     var userDate = "date" + number;
     let date = moment().format("dddd, Do MMMM");
 
-    localStorage.setItem(userKey, JSON.stringify(userResponse));
-    localStorage.setItem("questionNumber", JSON.stringify(number));
-    localStorage.setItem(userDate, JSON.stringify(date));
+    if (userResponse === "") {
+        $("#questionPrompt").text(
+            "Hold up! You didn't type anything in... Seriously... what do you want?"
+        );
+        $("#userInput").show();
+        $("#nextButton").show();
+    } else {
+        localStorage.setItem(userKey, JSON.stringify(userResponse));
+        localStorage.setItem("questionNumber", JSON.stringify(number));
+        localStorage.setItem(userDate, JSON.stringify(date));
 
-    $("#questionPrompt").text(
-        userResponse + "?! wait hold up. Does this benefit others?"
-    );
-    $("#yesButton").show();
-    $("#noButton").show();
+        $("#questionPrompt").text(
+            userResponse + "?! wait hold up. Does this benefit others?"
+        );
+        $("#yesButton").show();
+        $("#noButton").show();
+    }
 }
 
 function yesNoButton() {
