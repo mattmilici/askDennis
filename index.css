@@ -22,7 +22,7 @@ body {
     padding: 0;
 }
 
-.light span {
+span {
     color: yellow;
     font-weight: bold;
     font-family: "Righteous", cursive;
@@ -187,4 +187,14 @@ main {
 
 #conversation {
     margin-bottom: 5%;
+}
+
+#welcomeHeader,
+#welcomeParagraph {
+    text-align: center;
+}
+
+#welcomeHeader {
+    padding-bottom: 5px;
+    border-bottom: solid black 1px;
 }
