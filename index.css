@@ -142,21 +142,6 @@ main {
     border: none;
 }
 
-.fa-arrow-circle-right,
-.fa-arrow-circle-left {
-    color: white;
-    background-color: none;
-}
-
-#instructionsNav {
-    display: flex;
-    justify-content: space-between;
-}
-
-#instructionsHeader {
-    margin-bottom: 5%;
-}
-
 #textArea {
     margin: 3%;
 }
@@ -198,3 +183,49 @@ main {
     padding-bottom: 5px;
     border-bottom: solid black 1px;
 }
+
+#conversation {
+    margin: 5% 20% 5% 20%;
+}
+
+#lead1 {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+#lead2 {
+    text-align: end;
+    margin-bottom: 0;
+}
+
+.fa-arrow-circle-right,
+.fa-arrow-circle-left {
+    color: white;
+    background-color: none;
+}
+
+#instructionsNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#instructionsHeader {
+    margin-bottom: 5%;
+}
+
+
+/* p.kid {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #fff;
+    border: 8px solid #666;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 2px 4px #888;
+    -moz-box-shadow: 2px 2px 4px #888;
+    box-shadow: 2px 2px 4px #888;
+} */
