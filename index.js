@@ -77,3 +77,38 @@ function yesNoButton() {
     $("#startButton").show();
     $("#startButton").text("try again");
 }
+
+$("#instructionsButtonRight").on("click", instructions2);
+
+function instructions2() {
+    $("#instructionsHeader").text("Here's how it works");
+
+    $("#lead1").text(
+        "Step 1: Tell Dennis what your kid want's by typing it into the textbox"
+    );
+
+    $("#lead2").show();
+    $("#lead2").text("Step 2: Answer the follow up prompts");
+
+    $("#lead3").show();
+    $("#lead3").text(
+        "Step 3: Sit back and let Dennis determine if the product is worth buying!"
+    );
+
+    $("#lead4").show();
+    $("#lead4").text(
+        "PS there is a 5% chance that Dennis says yes to keep it interesting. That being said, I wouldn't let Dennis decide on anything expensive"
+    );
+
+    var beginButton = $("<button>");
+    beginButton.attr("id", "getStarted1");
+    beginButton.text("Get Started!");
+    $("#conversation").append(beginButton);
+    beginButton.attr("onClick", "location.href='index.html'");
+
+    $("#instructionsButtonLeft").hide();
+    $("#instructionsButtonRight").hide();
+    $("#lead5").hide();
+    $("#lead6").hide();
+    $("#lead7").hide();
+}
