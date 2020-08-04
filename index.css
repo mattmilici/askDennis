@@ -153,7 +153,7 @@ main {
     z-index: 15;
     top: 50%;
     left: 50%;
-    margin: -30px 0 0 -150px;
+    margin: -80px 0 0 -150px;
 }
 
 #buttonChoice {
@@ -185,7 +185,7 @@ main {
 }
 
 #conversation {
-    margin: 5% 20% 5% 20%;
+    margin: 0 20% 5% 20%;
 }
 
 #lead1 {
@@ -229,3 +229,9 @@ main {
     -moz-box-shadow: 2px 2px 4px #888;
     box-shadow: 2px 2px 4px #888;
 } */
+
+@media only screen and (max-width: 400px) {
+    #conversation {
+        margin: 0 1% 5% 1%;
+    }
+}
