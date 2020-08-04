@@ -1,4 +1,4 @@
-$("#instructionsButton").on("click", instructions2);
+$("#instructionsButtonRight").on("click", instructions2);
 
 function instructions2() {
     $("#instructionsHeader").text("Here's how it works");

@@ -94,6 +94,7 @@ main {
 .header {
     text-align: center;
     font-size: 3.5rem;
+    color: white;
 }
 
 .listResponses {
@@ -141,7 +142,36 @@ main {
     border: none;
 }
 
-.fa-arrow-circle-right {
+.fa-arrow-circle-right,
+.fa-arrow-circle-left {
     color: white;
     background-color: none;
+}
+
+#instructionsNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#instructionsHeader {
+    margin-bottom: 5%;
+}
+
+#textArea {
+    margin: 3%;
+}
+
+.startingPage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+#getStarted,
+#learnHow {
+    margin-bottom: 5%;
+}
+
+#conversation {
+    margin-bottom: 5%;
 }
