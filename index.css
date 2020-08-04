@@ -178,6 +178,11 @@ main {
 #getStarted,
 #learnHow {
     margin-bottom: 5%;
+    background-color: white;
+    color: #27abe9;
+    font-weight: bold;
+    padding: 3%;
+    border-radius: 50px;
 }
 
 #conversation {
